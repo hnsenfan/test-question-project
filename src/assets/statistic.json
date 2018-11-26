@@ -1,0 +1,25 @@
+{
+    "stats": [
+        {
+            "experience": "0-1 year",
+            "avgscore": 40
+        }, {
+            "experience": "1-2 year",
+            "avgscore": 50
+        }, {
+            "experience": "2-3 year",
+            "avgscore": 48
+        }, {
+            "experience": "3-4 year",
+            "avgscore": 60
+        }, {
+            "experience": "4-5 year",
+            "avgscore": 70
+        }, {
+            "experience": "5-6 year",
+            "avgscore": 75
+        }, {
+            "experience": "6 years above",
+            "avgscore": 75
+        }]
+}

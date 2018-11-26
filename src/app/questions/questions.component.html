@@ -1,0 +1,33 @@
+<header class="header-box">
+    <h1 class="page-title">
+        <span>{{data.title}}</span>
+    </h1>
+</header>
+<article *ngFor="let data of questionData; let i = index">
+    <section class="question-box" [hidden]="questionData[i].page !== currentPage">
+        <form #questionForm1 = "ngForm">
+            <div class="question-label">{{questionData[i].prompt}}</div>
+            <div [hidden]="data.question_type !== 'TextQuestion'">
+                <textarea [required]='data.is_required' [minlength]='data.min_char_length' rows='5' cols='50' name=answer{{i}} placeholder='Type in your answer here'[(ngModel)]='answer[i]'></textarea>
+            </div>
+            <div [hidden]="data.question_type !== 'RadioQuestion'">
+                <div *ngFor="let option of data.option; let j = index">
+                    <input type='radio' id=radio{{j}} name=answer{{i}} [(ngModel)]='answer[i]' value={{option}}>
+                    <label for='radio{{j}}'>{{option}}</label><br/>
+                </div>
+            </div>
+            <div [hidden]="data.question_type !== 'CheckboxQuestion'">
+                    <div *ngFor="let option of data.option; let k = index">
+                        <input type='checkbox' id=checkbox{{k}} name=answer{{i}} value={{option}} (change)="selectCheckbox($event, option)">
+                        <label for='checkbox{{k}}'>{{option}}</label><br/>
+                    </div>
+                </div>
+            <div class='mt-20'>
+                <button type="submit" class="btn-lg nav-button previous" [disabled]='currentPage === 1' (click)=previous()>Previous</button>
+                <button type="submit" class="btn-lg nav-button next" [disabled]='!questionForm1.valid' (click)=next()>Next</button>
+            </div>
+        </form>    
+    </section>
+</article>
+<footer class="footer">
+</footer>

@@ -1,0 +1,55 @@
+{
+    "title": "HTML, Javascript, CSS Test - Beginner",
+    "questions": [
+        {
+            "id": 1,
+            "question_type": "RadioQuestion",
+            "prompt": "Inside which HTML element do we put the JavaScript?",
+            "is_required": true,
+            "min_char_length": 1,
+            "option": ["<javascript>", "<script>", "<js>", "<scripting>"],
+            "correct_answer": "<script>",
+            "page": 1
+        },
+        {
+            "id": 2,
+            "question_type": "RadioQuestion",
+            "prompt": "Where is the correct place to insert a JavaScript?",
+            "is_required": true,
+            "min_char_length": 1,
+            "option": ["The <body> section", "Both the <head> section and the <body> section", "The <head> section", "The <foot> section"],
+            "correct_answer": "Both the <head> section and the <body> section",
+            "page": 2
+        },
+        {
+            "id": 3,
+            "question_type": "RadioQuestion",
+            "prompt": "Choose the correct HTML element for the largest heading:",
+            "is_required": true,
+            "min_char_length": 1,
+            "option": ["<head>", "<h6>", "<h1>", "<heading>"],
+            "correct_answer": "<h1>",
+            "page": 3
+        },
+        {
+            "id": 4,
+            "question_type": "RadioQuestion",
+            "prompt": "How do you add a background color for all <h1> elements?",
+            "is_required": false,
+            "min_char_length": 1,
+            "option": ["h1 {background-color:#FFFFFF;}", "all.h1 {background-color:#FFFFFF;}", "h1.all {background-color:#FFFFFF;}", "h1-all {background-color:#FFFFFF;}"],
+            "correct_answer": "h1 {background-color:#FFFFFF;}",
+            "page": 4
+        },
+        {
+            "id": 5,
+            "question_type": "CheckboxQuestion",
+            "prompt": "Choose which are the features in ES6:",
+            "is_required": false,
+            "min_char_length": 1,
+            "option": ["Block-Scoped Constructs Let and Const", "Media Input with Audio and Video", "Set and Map", "Arrows =>"],
+            "correct_answer": ["Block-Scoped Constructs Let and Const", "Set and Map", "Arrows =>"],
+            "page": 5
+        }
+    ]
+}

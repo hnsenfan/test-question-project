@@ -1,0 +1,21 @@
+<header class="header-box">
+    <h1 class="page-title">
+        <span>Score: {{scorePercentage}}% - {{resultStatus}}</span>
+    </h1>
+</header>
+
+<article *ngFor="let question of questionData; let i = index">
+    <section class="result-box">
+        <label class="question-label">{{questionData[i].prompt}}</label>
+        <!-- To check if the question_type of the question is 'CheckboxQuestion then display data from checkboxData, else, display the answersData' -->
+        <label class="answer-label">{{question.question_type === 'CheckboxQuestion' ? checkboxData.join(', ') : answersData[i]}}</label>
+    </section>
+</article>
+<article>
+    <canvas #chart height="300" width="300"></canvas>
+</article>
+<footer class="text-center mt-20">
+    <button type="submit" class="btn-lg nav-button next" (click)=startOver()>Start Over</button>
+    <button type="submit" class="btn-lg nav-button next" (click)=statistic()>Statistic</button>
+    <p class="footnote">Statistic will show you average scores of candidates</p>
+</footer>

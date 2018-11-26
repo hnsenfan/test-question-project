@@ -1,0 +1,113 @@
+.header-box {
+    margin: 3% 15%;
+    border-bottom: 2px solid crimson;
+    color: grey;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: default;
+    font-family: fantasy;
+}
+
+@media screen and (max-width: 600px) {
+    .question-box {
+        text-align: center;
+        font-size: 1em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .question-label {
+        user-select: none;
+        -webkit-user-select: none;
+        font-size: 1.2em;
+        font-family: fantasy;
+        color: maroon;
+        padding: 0 10px;
+    }
+    .answer-label {
+        display: block;
+        font-size: 1em;
+        margin: 5% 10%;
+        padding-bottom: 10px;
+        border-bottom: 2px solid gray;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        word-break: break-word;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .question-box {
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .question-label {
+        user-select: none;
+        -webkit-user-select: none;
+        font-size: 1.5em;
+        font-family: fantasy;
+        color: maroon;
+    }
+    .answer-label {
+        display: block;
+        font-size: 1.5em;
+        margin: 1% 35%;
+        padding-bottom: 10px;
+        border-bottom: 2px solid gray;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        word-break: break-word;
+    }
+}
+
+
+.nav-button {
+    color: white;
+    border-radius: 20px;
+    width: 120px;
+    box-shadow: 0 2px #ccc;
+}
+
+.next {
+    background: firebrick;
+}
+
+.previous {
+    background: #fc4f7d;
+}
+
+.next:hover {
+    background: #990000;
+}
+
+.previous:hover {
+    background: #fc1d58;
+}
+
+.previous:disabled {
+    background: #ccc;
+}
+
+.next:disabled {
+    background: #ccc;
+}
+
+.result-box {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle;
+}
+
+.footnote {
+    font-style: italic;
+    color: grey;
+    padding-top: 5px;
+}
