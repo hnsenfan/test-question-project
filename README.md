@@ -5,6 +5,7 @@ A front-end project built under Angular v4
 # Scope
 
 The project includes development of online test questions as a single-page application, with dynamic forms and questions
+Statistics part is still under development (currently serves static data from JSON file)
 
 ## Getting Started
 
